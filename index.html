@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" type="text/css" href="style/kwitter.css">
+    <script src="kwitter.js"></script>
+</head>
+<style>
+#tick{
+    height: 20px;
+    width: 20px;
+}
+
+#school{
+    width: 600px;
+}
+
+.left img{
+  position: absolute;
+  left: 30px;
+  width: 300px;
+  border: 3px solid #73AD21;
+  padding: 10px;
+  image: (url:"https://m.media-amazon.com/images/I/81vaB9d1pxL._AC_SL1500_.jpg";);
+  }
+.right {
+  position: absolute;
+  right: 30px;
+  width: 600px;
+  height: 425px;
+  border: 3px solid #73AD21;
+  padding: 10px;
+  background-color: #73AD21;
+  }
+ </style>
+<body>
+    <div class="left">
+    <img src="children-in-front-of-school-building.webp" id="school">
+</div>
+        <div class="right">
+            <h1 class="header"><img src="tick.png" id="tick">Kwitter</h1>     
+            <label>Sign into your account</label>
+            <input type="text" id="user_name" class="form-control" placeholder="User Name">
+            <button id="login_btn" class="btn btn-primary" onclick="addUser()">Login</button>
+        </div>
+</body>
